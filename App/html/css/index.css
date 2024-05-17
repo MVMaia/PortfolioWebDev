@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.tarefa {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+input {
+    border: 3px solid orange;
+    margin: 18px !important;
+    padding: 12px;
+    width: 400px;
+    font-size: 24px;
+    letter-spacing: 6px;
+    border-radius: 10px;
+
+}
+input:focus{
+    border: 3px solid orange;
+    outline: none; /*remove a linha externa padrão */
+}
+.login h2{
+    margin-top: 24px;
+    letter-spacing: 6px;
+    color: orange;
+}
+.login{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid orange;
+    padding: 48px;
+    border-radius: 12px;
+    background-color: white;
+}
+span{
+    font-size: 48px;
+    color: orange;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+}
+
+button{
+    
+    padding: 12px;
+    border:none;
+    background-color: orange;
+    width: 400px;
+    height: 60px;
+    margin-top:24px;
+    margin-bottom: 24px;
+    color: white;
+    font-size: 28px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    border-radius: 10px !important;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+a {
+
+    padding: 6px;
+
+}
+
+table td,
+th {
+    padding: 24px !important;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+    z-index: 999;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 4px;
+
+}
+
+.registros {
+    margin-top: 25px;
+    line-height: 24px;
+}

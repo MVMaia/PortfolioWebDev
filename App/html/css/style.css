@@ -1,0 +1,118 @@
+.loader_hide {
+
+    display: none;
+
+}
+
+.dados {
+    border: 1px solid orange !important;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+header {
+
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 24px;
+    background-color: orangered;
+    color: white;
+    padding: 24px;
+    border-radius: 12px;
+    border: 6px solid white;
+    margin-bottom: 24px;
+}
+h3{
+    color:orange;
+    letter-spacing: 6px;
+}
+
+.textLoader {
+
+    position: absolute;
+    top: 46%;
+    left: 48%;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.6;
+
+
+}
+
+.textLoader2 {
+
+    position: absolute;
+    top: 55.5%;
+    left: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.6;
+
+
+}
+
+.textLoader_hide {
+
+    display: none;
+
+
+}
+
+.btnDados {
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: orangered;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    border: 3px solid black
+}
+
+/* Loader */
+.loader_show {
+    width: 3rem;
+    height: 3rem;
+    border: 6px solid #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(25deg);
+    box-sizing: border-box;
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    inset: -10px;
+    border-radius: 50%;
+    border: 10px solid #FF3D00;
+    animation: prixClipFix 4s infinite linear;
+}
+
+@keyframes prixClipFix {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+    }
+
+    50% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+    }
+
+    100% {
+        clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+    }
+}

@@ -1,0 +1,44 @@
+<?php
+
+class Home
+{
+
+    private $header,$navbar,$posts,$rowTable,$table,$rows,$formPost;
+    public function __construct()
+    {
+        $this->table = file_get_contents("./html/Componentes/TablePadrao.html");
+        $this->montaTabela();
+    }
+
+    public function montaTabela(){
+        //instanciando o objeto:
+        $postsResult = new Posts();
+        //aplico o método all da classe posts.php:
+        $this->posts = $postsResult->all();
+        $i = 1;
+        foreach($this->posts as $row){
+            $this->rowTable = file_get_contents("./html/Componentes/rowTable.html");
+            $this->rowTable = str_replace('{id}',$i++,$this->rowTable);
+            $this->rowTable = str_replace('{post}',$row['post'],$this->rowTable);
+            $this->rowTable = str_replace('{data}', $row['data'],$this->rowTable);
+            $this->rowTable = str_replace('{hora}', $row['hora'], $this->rowTable);
+            $this->rows .= $this->rowTable;
+        }
+        //montando tabela:
+        $this->table = str_replace('{rows}', $this->rows,$this->table);
+    }
+    public  function show()
+    {
+
+        try {
+            // Lê o conteúdo de um arquivo chamado "exemplo.txt" para uma string
+            $pagina = file_get_contents("./html/home.html");
+            $pagina = str_replace('{posts}', $this->table,$pagina);
+            $pagina = str_replace('{usuario}', $_SESSION['usuario'], $pagina);
+            echo $pagina;
+        } catch (Exception $error) {
+            print_r($error);
+            exit;
+        }
+    }
+}

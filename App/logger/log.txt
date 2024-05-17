@@ -1,0 +1,536 @@
+17-05-2024 16:53:27 -  kauan@mail.com disparou :  Deslogou 
+17-05-2024 16:53:24 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:53:24 -  kauan@mail.com disparou :  Autenticou
+17-05-2024 16:52:47 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:52:42 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:52:22 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:52:21 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('kauan', 'kauan@mail.com', '12345')
+17-05-2024 16:52:04 -  marcelo@mail.com disparou :  Deslogou 
+17-05-2024 16:51:47 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:51:44 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:51:35 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:51:35 -  marcelo@mail.com disparou :  Autenticou
+17-05-2024 16:49:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:49:44 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:49:42 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:48:38 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:48:32 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:48:32 -  marcelo@mail.com disparou :  Autenticou
+17-05-2024 16:48:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 16:48:02 -  cosme@gmail.com disparou :  Deslogou 
+17-05-2024 15:59:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 15:58:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 15:58:58 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 15:53:09 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 15:52:58 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 15:52:58 -  cosme@gmail.com disparou :  Autenticou
+17-05-2024 15:34:37 -  cris@mail.com disparou :  Deslogou 
+17-05-2024 15:14:49 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 15:14:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:46:38 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:46:38 -  cris@mail.com disparou :  Autenticou
+17-05-2024 14:46:32 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:46:32 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('cristian', 'cris@mail.com', '123')
+17-05-2024 14:30:10 -  marcelo@mail.com disparou :  Deslogou 
+17-05-2024 14:30:07 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:23:31 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:21:08 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:21:08 -  marcelo@mail.com disparou :  Autenticou
+17-05-2024 14:21:03 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 14:16:30 -  marcelo@mail.com disparou :  Deslogou 
+17-05-2024 13:57:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 13:57:44 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 13:57:42 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 13:57:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+17-05-2024 13:57:14 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 16:47:30 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:47:05 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:47:03 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:46:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:46:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:46:54 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:46:50 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:46:42 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:45:56 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:45:56 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:45:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:53 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:52 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:15 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:15 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:13 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:44:12 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:28 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:28 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:26 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:03 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:43:02 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:42:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:42:34 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:25 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:25 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:25 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:24 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:15 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:39:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:38:20 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:38:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:38:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:38:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:38:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:38:18 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:34:54 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:34:53 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:34:51 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:34:26 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:34:26 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:34:26 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:33:16 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:33:16 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:33:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:33:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:33:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:33:00 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:32:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:32:45 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:32:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:31:17 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:31:02 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:30:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:30:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:30:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:30:58 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:30:06 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:30:03 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:29:26 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:29:25 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:29:00 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:27:22 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:26:57 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:26:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:26:16 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:26:14 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:25:37 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:25:23 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:25:22 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:25:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:24:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:24:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:24:44 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:24:21 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:24:17 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:24:08 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:23:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:16:29 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:16:13 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:15:49 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:13:18 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:09:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:09:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:09:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:09:44 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:08:08 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:08:08 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 16:07:58 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:53 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:52 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:52 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:50 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:32 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:27 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:24 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:23 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:07:00 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:06:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 16:06:59 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:56:24 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:55:33 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:55:33 -  cosme@gmail.com disparou :  Autenticou
+16-05-2024 15:55:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:55:02 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:55:02 -  cosme@gmail.com disparou :  Autenticou
+16-05-2024 15:54:58 -  marcelo@mail.com disparou :  Deslogou 
+16-05-2024 15:54:57 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:54:56 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:52:51 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:51:44 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:51:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:51:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:51:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:51:00 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:49:23 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:48:56 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:47:49 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:44:03 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:42:30 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:42:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:42:01 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:38:47 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:38:46 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:38:15 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:35:51 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:35:31 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:35:23 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:35:12 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:35:11 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:56 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:55 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:21 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:21 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:21 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:19 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:34:18 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+16-05-2024 15:11:55 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 15:11:49 -  marcelo@mail.com disparou :  Deslogou 
+16-05-2024 14:42:45 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 14:42:38 -  marcelo@mail.com disparou :  Deslogou 
+16-05-2024 14:16:15 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 14:16:05 -  marcelo@mail.com disparou :  Deslogou 
+16-05-2024 14:14:16 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 14:14:09 -  marcelo@mail.com disparou :  Deslogou 
+16-05-2024 14:13:34 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 14:13:20 -  marcelo@mail.com disparou :  Deslogou 
+16-05-2024 13:47:16 -  marcelo@mail.com disparou :  Autenticou
+16-05-2024 13:47:02 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('', '', '')
+15-05-2024 15:57:00 -  cosme@gmail.com disparou :  Autenticou
+15-05-2024 15:51:07 -  cosme@gmail.com disparou :  Autenticou
+15-05-2024 15:49:13 -  cosme@gmail.com disparou :  Autenticou
+15-05-2024 15:47:54 -  cosme@gmail.com disparou :  Autenticou
+15-05-2024 14:28:46 -  cosme@gmail.com disparou :  Autenticou
+15-05-2024 14:02:07 -  cosme@gmail.com disparou :  Autenticou
+14-05-2024 16:45:07 -  lais@mail.com disparou :  Deslogou 
+14-05-2024 16:45:02 -  lais@mail.com disparou :  Autenticou
+14-05-2024 16:44:50 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('lais', 'lais@mail.com', '1234')
+14-05-2024 16:43:32 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('ASD', 'DSA', 'ASD')
+14-05-2024 16:42:05 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+            VALUES  fdsa,
+                    asdf,
+                    fdsa)
+14-05-2024 16:38:35 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+            VALUES  'dsfsdf',
+                    'dsfsdf',
+                    'dsfds')
+14-05-2024 16:38:13 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+            VALUES  'dsadsad',
+                    'asdasda',
+                    'asdasdsada')
+14-05-2024 16:32:45 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+            VALUES  'dsadsad',
+                    'sadsad',
+                    'dsad')
+14-05-2024 16:30:36 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 16:30:30 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 16:30:24 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'fdsfas',
+                'asd',
+                'rewqewqr')
+14-05-2024 16:30:24 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'fdsfas',
+                'asd',
+                'rewqewqr')
+14-05-2024 16:24:35 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'fsasdf',
+                'sadfsadf',
+                'qwrewrwe')
+14-05-2024 16:00:25 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'das',
+                'asd',
+                'das')
+14-05-2024 16:00:19 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asdf',
+                'qwer',
+                '\zxc')
+14-05-2024 15:59:04 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asdf',
+                'qwer',
+                '\zxc')
+14-05-2024 14:45:55 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:24:43 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:24:34 -  cosme@gmail.com disparou :  Deslogou 
+14-05-2024 14:20:39 -  cosme@gmail.com disparou :  Autenticou
+14-05-2024 14:19:04 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'dsa',
+                'asd',
+                'zxc')
+14-05-2024 14:18:22 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'ASa',
+                'EWQ',
+                'XCV')
+14-05-2024 14:17:15 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  ('qwe',
+                'qwe',
+                'ewq')
+14-05-2024 14:16:45 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:13:18 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asd',
+                'asd',
+                'asd')
+14-05-2024 14:12:59 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asd',
+                'asd',
+                'asd')
+14-05-2024 14:12:48 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asd',
+                'asd',
+                'asd')
+14-05-2024 14:12:48 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asd',
+                'asd',
+                'as')
+14-05-2024 14:12:47 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asd',
+                'a',
+                '')
+14-05-2024 14:12:45 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:10:56 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asda',
+                'asdasda',
+                'asdasda')
+14-05-2024 14:10:55 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asda',
+                'asdasda',
+                '')
+14-05-2024 14:10:54 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'asda',
+                'a',
+                '')
+14-05-2024 14:10:52 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:10:29 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'aslkdlsakda',
+                'asdasdas',
+                'sadadasda')
+14-05-2024 14:10:13 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'aslkdlsakda',
+                'asdasdas',
+                'sadadasda')
+14-05-2024 14:10:12 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'aslkdlsakda',
+                'asdasdas',
+                '')
+14-05-2024 14:10:12 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'aslkdlsakda',
+                'asdasdas',
+                '')
+14-05-2024 14:10:11 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'aslkdlsakda',
+                '',
+                '')
+14-05-2024 14:10:11 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  'aslkdlsakda',
+                '',
+                '')
+14-05-2024 14:10:08 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:00:36 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:00:26 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:00:24 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:00:23 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:00:22 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 14:00:21 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:57:41 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:57:40 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:57:39 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:57:39 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:57:35 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:54:41 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:54:40 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:54:39 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:54:36 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:54:33 -  cosme@gmail.com disparou :  Deslogou 
+14-05-2024 13:54:32 -  cosme@gmail.com disparou :  Autenticou
+14-05-2024 13:51:59 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:51:24 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:51:22 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:51:18 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:51:15 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:49:50 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:48:16 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:48:13 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+14-05-2024 13:48:06 -  cosme@gmail.com disparou :  Deslogou 
+14-05-2024 13:48:04 -  cosme@gmail.com disparou :  Autenticou
+14-05-2024 13:47:58 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:30:26 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:30:26 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:30:25 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:30:22 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:30:20 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:28:58 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:28:51 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:28:50 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:28:46 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:28:43 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:25:37 -  Marcelo disparou :  INSERT INTO  posts (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:24:56 -  Marcelo disparou :  INSERT INTO  posts (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:24:54 -  Marcelo disparou :  INSERT INTO  posts (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:24:50 -  Marcelo disparou :  INSERT INTO  posts (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 16:24:47 -  Marcelo disparou :  INSERT INTO  posts (nome,email,senha)
+        VALUES  '',
+                '',
+                '')
+13-05-2024 14:11:50 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 14:11:43 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 13:45:13 -  marcelo@mail.com disparou :  Deslogou 
+13-05-2024 13:45:06 -  marcelo@mail.com disparou :  Autenticou
+13-05-2024 13:36:34 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 13:36:22 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 13:36:14 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 13:35:53 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 13:34:59 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 13:34:26 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 13:30:36 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 13:30:34 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 11:34:10 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 11:34:09 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 11:33:18 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 11:33:17 -  cosme@gmail.com disparou :  Autenticou
+13-05-2024 11:33:04 -  cosme@gmail.com disparou :  Deslogou 
+13-05-2024 11:33:03 -  cosme@gmail.com disparou :  Autenticou
