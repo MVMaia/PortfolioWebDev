@@ -1,3 +1,11 @@
+18-05-2024 01:19:08 -  cosme@gmail.com disparou :  Deslogou 
+18-05-2024 01:19:05 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+18-05-2024 01:19:05 -  cosme@gmail.com disparou :  Autenticou
+18-05-2024 01:18:02 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+18-05-2024 01:18:02 -  cosme@gmail.com disparou :  Autenticou
+18-05-2024 01:17:48 -  marcelo@mail.com disparou :  Deslogou 
+18-05-2024 01:17:33 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+18-05-2024 01:17:33 -  marcelo@mail.com disparou :  Autenticou
 17-05-2024 16:53:27 -  kauan@mail.com disparou :  Deslogou 
 17-05-2024 16:53:24 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
 17-05-2024 16:53:24 -  kauan@mail.com disparou :  Autenticou
