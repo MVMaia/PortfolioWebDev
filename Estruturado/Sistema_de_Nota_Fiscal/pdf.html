@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>imprimirPDF👍</title>
+    <link rel="stylesheet" href="CSS/pdfStyle.css" />
+    <style>
+      table {
+          border-collapse: collapse;
+          width: 100%;
+      }
+      th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: center;
+      }
+      th {
+          background-color: #f2f2f2;
+      }
+  </style>
+  </head>
+
+  <body>
+    <div class="folha" id="folha67">
+      <div class="line">
+        <div class="div1">
+          <img src="/images/logoSENAC.png" width="200px" height="170px" />
+          <label style="font-size: 50px;margin-top: -25px;margin-left: 55px;font-family: 'Times New Roman', Times, serif;">Nota Fiscal</label>
+        </div>
+        <div class="div2" style="display: flex; margin-top: -5px">
+          <div class="danfe1">
+            <label style="font-size: 25px; margin-left: 15px">N° da Nota : <label id="nNota" style="font-size: 20px"></label></label>
+            <label style="font-size: 25px; margin-left: 15px">Série : <label id="serie" style="font-size: 20px"></label></label>
+            <label style="font-size: 25px; margin-left: 15px">Folha : <label id="folha" style="font-size: 20px"></label></label>
+          </div>
+          <div class="danfe2">
+            <label style="font-size: 25px">Data : <label id="data" style="font-size: 20px"></label></label>
+            <label style="font-size: 25px">Hora : <label id="hora" style="font-size: 20px"></label></label>
+            <label style="font-size: 25px">Natureza da operação :<label id="natOpt" style="font-size: 20px"></label></label>
+          </div>
+        </div>
+      </div>
+      <div class="line1">
+        <label style="font-size: 25px">Remetente</label>
+        <div class="div3" style="display: flex; margin-right: 45px">
+          <div class="remetente">
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">Razão Social : <label id="razaoSocialR" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">CPF/CNPJ : <label id="cpf/cnpjR" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">Telefone : <label id="telR" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">Inscrição Estadual :<label id="IncricaoSR" style="font-size: 15px"></label></label>
+          </div>
+          <div class="remetente" style="margin-left: 170px">
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">Endereço : <label id="enderecoR" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">Bairro : <label id="bairroR" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">Municipio : <label id="municipioR" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-left: 15px; margin-bottom: 2px">CEP : <label id="cepR" style="font-size: 15px"></label></label>
+          </div>
+        </div>
+      </div>
+      <div class="line1">
+        <label style="font-size: 25px">Destinatário</label>
+        <div class="div3" style="display: flex; margin-right: 45px">
+          <div class="remetente">
+            <label style="font-size: 20px; margin-bottom: 5px">Razão Social : <label id="razaoSocialD" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">CPF/CNPJ : <label id="cpf/cnpjD" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Telefone : <label id="telD" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Inscrição Estadual : <label id="IncricaoSD" style="font-size: 15px"></label></label>
+          </div>
+          <div class="remetente" style="margin-left: 170px">
+            <label style="font-size: 20px; margin-bottom: 5px">Endereço : <label id="enderecoD" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Bairro : <label id="bairroD" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Municipio : <label id="municipioD" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">CEP : <label id="cepD" style="font-size: 15px"></label></label>
+          </div>
+        </div>
+      </div>
+      <div class="line1" style="height: 220px;">
+        <label style="font-size: 25px">Transportadora</label>
+        <div class="div3" style="display: flex; margin-right: 45px">
+          <div class="remetente" style="margin-left: 50px">
+            <label style="font-size: 20px; margin-bottom: 5px">Razão Social :<label id="razaoSocialT" style="font-size: 15px"></label></label>
+              <label style="font-size: 20px; margin-bottom: 5px">CNPJ : <label id="cpf/cnpjT" style="font-size: 15px"></label></label>
+              <label style="font-size: 20px; margin-bottom: 5px">Telefone : <label id="telT" style="font-size: 15px"></label></label>
+              <label style="font-size: 20px; margin-bottom: 5px">Inscrição Estadual : <label id="IncricaoST" style="font-size: 15px"></label></label>
+              <label style="font-size: 20px; margin-bottom: 5px">Responsabilidade : <label id="RespT" style="font-size: 15px"></label></label>
+          </div>
+          <div class="remetente" style="margin-left: 100px; margin-top: 10px;">
+            <label style="font-size: 20px; margin-bottom: 5px">Endereço : <label id="enderecoT" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Bairro : <label id="bairroT" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Municipio : <label id="municipioT" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Valor Frete : <label id="ValorDoFrete" style="font-size: 15px"></label></label>
+            <label style="font-size: 20px; margin-bottom: 5px">Peso da Carga : <label id="ValorBruto" style="font-size: 15px"></label></label>
+          </div>
+        </div>
+      </div>
+      <div class="line4" id="line4">
+        <table id="TabelaProd" style="width: 100%; height: 100%;">
+          <tr>
+              <th>Código</th>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Valor Unitário</th>
+              <th>Valor Total</th>
+              <th></th>
+          </tr>
+      </table>
+      </div>
+      </div>
+    </div>
+    <div class="btns" id="btns">
+      <button id="btnButton" onclick="imprimir()">Imprimir</button>
+      <button id="btnVoltar" onclick="Voltar()">Voltar</button>
+    </div>
+    
+  </body>
+  <script type="text/JavaScript">
+    function Voltar() {
+      window.location.href = 'index.html';
+    }
+    function imprimirpdf() {
+        PreencherDanfe();
+        preencherRemet();
+        preencherDestiny3();
+        preencherTransport();
+        //window.print();
+    }
+    function imprimir(){
+        document.getElementById('btnButton').style.display = 'none';
+        document.getElementById('btnVoltar').style.display = 'none';
+        document.getElementById('btns').style.display = 'none';
+        window.print('folha67');
+        document.getElementById('btnButton').style.display = 'block';
+        document.getElementById('btnVoltar').style.display = 'block';
+        document.getElementById('btns').style.display = 'block';
+    }
+    function  PreencherDanfe(){
+        var key = pickKey();
+        //pegando do localstorage e convertendo para vetor novamente:
+        var valor = localStorage.getItem(`${key}-Danfe`);
+        var objeto = JSON.parse(valor);
+        //Estraindo valores do vetor
+        var entORsai = objeto.EntradaOuSaida;
+        var numeroN = objeto.NumeroNota;
+        var serieN = objeto.SerieNota;
+        var folha = objeto.FolhaNota;
+        var hora = objeto.hora;
+        var data = objeto.data;
+
+        //pegando labels:
+        var nNota = document.getElementById('nNota');
+        var serie = document.getElementById('serie');
+        var folha1 = document.getElementById('folha');
+        var data1 = document.getElementById('data');
+        var hora1 = document.getElementById('hora');
+        var natureza = document.getElementById('natOpt');
+        //Adicionando valores as Labels:
+        nNota.innerText = numeroN
+        serie.innerText = serieN;
+        folha1.innerHTML = folha;
+        data1.innerText = data;
+        hora1.innerText = hora;
+        natureza.innerText = entORsai;
+    }
+
+    function preencherRemet(){
+        var key2 = pickKey();
+        var valor2 = localStorage.getItem(`${key2}-Personal`);
+        var objeto2 = JSON.parse(valor2);
+        //Variaveis:
+        var RemetNome = objeto2.Nome;
+        var RemetCPF = objeto2.Cpf;
+        var RemetPhone = objeto2.Telefone;
+        var RemetEstate = objeto2.Estado;
+        var RemetAddres = objeto2.Endereco;
+        var RemetBairro = objeto2.Bairro;
+        var RemetCity = objeto2.Municipio;
+        var RemetCEP = objeto2.CEP;
+        //Pegando Labels:
+        var NameLabel = document.getElementById('razaoSocialR');
+        var cpfLabel = document.getElementById('cpf/cnpjR');
+        var telLabel = document.getElementById('telR');
+        var estateLabel = document.getElementById('IncricaoSR');
+        var ruaLabel = document.getElementById('enderecoR');
+        var bairroLabel = document.getElementById('bairroR');
+        var cityLabel = document.getElementById('municipioR');
+        var cepLabel = document.getElementById('cepR');
+        //Atribuindo valores as labels:
+        NameLabel.innerText = RemetNome;
+        cpfLabel.innerText = RemetCPF;
+        telLabel.innerText = RemetPhone;
+        estateLabel.innerText = RemetEstate;
+        ruaLabel.innerText = RemetAddres;
+        bairroLabel.innerText = RemetBairro;
+        cityLabel.innerText = RemetCity;
+        cepLabel.innerText = RemetCEP;
+
+    }
+    function preencherDestiny3(){
+        var key3 = pickKey();
+        var valor3 = localStorage.getItem(`${key3}-Destinatario`);
+        var objeto3 = JSON.parse(valor3);
+        //Variaveis:
+        var destName = objeto3.NomeDestinatario;
+        var destCPF = objeto3.CPFDestinatario;
+        var destPhone = objeto3.TelefoneDestinatario;
+        var destEstate = objeto3.InscricaoEstadual;
+        var destStreet = objeto3.MunicipioDestinatario;
+        var destBairro = objeto3.BairroDestinatario;
+        var destCity = objeto3.MunicipioDestinatario;
+        var destCEP = objeto3.CEPDestinatario;
+        //Pegando as Labels:
+        var nameDest = document.getElementById('razaoSocialD');
+        var cpfDest = document.getElementById('cpf/cnpjD');
+        var phoneDest = document.getElementById('telD');
+        var estateDest = document.getElementById('IncricaoSD');
+        var addresDest = document.getElementById('enderecoD');
+        var bairroDest = document.getElementById('bairroD');
+        var ciryDest = document.getElementById('municipioD');
+        var cepDest = document.getElementById('cepD');
+        //atribuindo os valores as labels 👍
+        nameDest.innerText = destName;
+        cpfDest.innerText = destCPF;
+        phoneDest.innerText = destPhone;
+        estateDest.innerText = destEstate;
+        addresDest.innerText = destStreet;
+        bairroDest.innerText = destBairro;
+        ciryDest.innerText = destCity;
+        cepDest.innerText = destCEP;
+
+    }
+    function preencherTransport(){
+        var key4 = pickKey();
+        var valor4 = localStorage.getItem(`${key4}-Transport`);
+        var objeto4 = JSON.parse(valor4);
+        //Variaveis:
+        var transName = objeto4.NomeTransport;
+        var transCNPJ = objeto4.CNPJTransport;
+        var transPhone = objeto4.TelefoneTransport;
+        var transEstate = objeto4.InscricaoEstadual;
+        var transAddress = objeto4.EnderecoTransport;
+        var transBairro = objeto4.TransportDistrict;
+        var transCity = objeto4.TransportMunicipio;
+        var transValor = objeto4.ValorDoFrete;
+        var transPeso = objeto4.PesoBruto;
+        var transFrete = objeto4.ResponsabTransport;
+        //Pegando as Labels:
+        var nameTrans = document.getElementById('razaoSocialT');
+        var cnpjTrans = document.getElementById('cpf/cnpjT');
+        var phoneTrans = document.getElementById('telT');
+        var estateTrans = document.getElementById('IncricaoST');
+        var responsTrans = document.getElementById('RespT');
+        var addressTrans = document.getElementById('enderecoT');
+        var bairroTrans = document.getElementById('bairroT');
+        var cityTrans = document.getElementById('municipioT');
+        var priceTrans = document.getElementById('ValorDoFrete');
+        var weigthTrans = document.getElementById('ValorBruto');
+        //atribuindo valores:
+        nameTrans.innerText = transName;
+        cnpjTrans.innerText = transCNPJ;
+        phoneTrans.innerText = transPhone;
+        estateTrans.innerText = transEstate;
+        responsTrans.innerText = transFrete;
+        addressTrans.innerText = transAddress;
+        bairroTrans.innerText = transBairro;
+        cityTrans.innerText = transCity;
+        priceTrans.innerText = transValor;
+        weigthTrans.innerText = transPeso;
+    }
+    function pickKey(){
+        var primeiraKey = localStorage.getItem('Nnota'); 
+        var atualizado = zeros(primeiraKey);
+        return atualizado;
+    }
+    function zeros(number) {
+        let numStr = String(number);
+        while (numStr.length < 8) {
+        numStr = '0' + numStr;
+        }
+        numStr = numStr.substring(0, 4) + '-' + numStr.substring(4);
+        return numStr;
+    }
+    //função que pega os produtos do localStorage e adiciona eles na tabela da nota fiscal:
+    function preencherNotaFiscal(){
+      var chaveLs = pickKey();
+      var products = localStorage.getItem(`${chaveLs}-Prods`);
+      prodConvert = JSON.parse(products);
+      var tabelaNfiscal = document.getElementById('TabelaProd');
+
+      for(i=0; i<prodConvert.length; i++){
+        var lineObj = prodConvert[i];
+        var TableLine4 = `<tr><td>${lineObj.codigo}</td><td>${lineObj.produto}</td><td>${lineObj.quantidade}</td><td>${lineObj.valorUnit}</td><td>${lineObj.valorTotal}</td></tr>`;
+        tabelaNfiscal.innerHTML += TableLine4;
+      }
+    }
+    function ajustarAlturaLine4() {
+        var tabelaHeight = document.getElementById("TabelaProd").offsetHeight;
+        document.getElementById("line4").style.height = tabelaHeight + "px";
+        document.getElementById("folha67").style.height = document.getElementById("folha67").scrollHeight + "px";
+      }
+
+      // Chame a função ao carregar a página
+      window.onload = function () {
+        imprimirpdf();
+        preencherNotaFiscal();
+        ajustarAlturaLine4(); // Ajusta a altura da .line4 ao carregar a página
+      };
+
+      // Chame a função sempre que a janela for redimensionada
+      window.onresize = function () {
+        ajustarAlturaLine4();
+      };
+  </script>
+</html>

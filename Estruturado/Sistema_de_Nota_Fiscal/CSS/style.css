@@ -1,0 +1,184 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/workspace-1280538_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    width: 1250px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 15px 15px 30px 30px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.nave h1{
+    font-family:Palatino, URW Palladio L, serif;
+}
+.nave img{
+    margin-left: 15px;
+    margin-top: 9px;
+}
+.nave{
+    border-radius: 15px 15px 0 0 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: rgb(196, 196, 196);
+    border: 1px solid black;
+    border-top: none;
+}
+.tab{
+    width: 99.5%;
+    margin-left: 4px;
+    background-color: white;
+    align-items: center;
+    justify-content: start;
+}
+.tab button{
+    width: 157px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    margin-left: -5px;
+
+}
+.tab button:hover{
+    background-color: #6b6a6a;
+    color: white;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+}
+#div1{
+    border-radius: 15px 0 0 0 ;
+    border-right: double 3px black;
+}
+#div2{
+    border-right: double 3px black;
+}
+#div3{
+    border-right: double 3px black;
+}
+#div3 select{
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    color: #333;
+}
+#div4{
+    align-items: start;
+    border-right: double 3px black;
+}
+#div5{
+    align-items: start;
+    border-radius: 0 15px 0 0 ;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85%;
+    background-color: rgb(124, 124, 124);
+    border-radius: 0 0 30px 30px;
+    display: none;
+}
+.log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 95%;
+    margin-top: 5px;
+    background-color: rgb(124, 124, 124);
+}
+.form{
+    margin-top: 70px;
+    margin-left: 180px;
+    width: 90%;
+}
+label {
+    color: white !important;
+}
+/* Definir a cor da linha (borda) para branco */
+input,
+textarea {
+    border-color: white !important;
+    color: white;
+}
+.divbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.btn_muda{
+    margin-right: 55px;
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+.btn_muda2{
+    margin-right: 30px;
+    margin-left: 15px;
+    width: 250px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+.divbtn button:hover{
+    background-color: #353535;
+    color: white;
+}
+.ComB {
+    width: 250px;
+    height: 35px;
+    background-color: white;
+}
+.btnAdd{
+    width: 228px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+.btnAdd:hover{
+    background-color: #353535;
+    color: white;
+}
+#tabelinha{
+    max-height: 200px;
+    overflow-y: hidden;
+    padding: 10px; /* Adiciona um espaçamento interno */
+}

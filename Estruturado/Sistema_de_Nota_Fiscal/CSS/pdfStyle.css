@@ -1,0 +1,104 @@
+body{
+    width: 97.5vw;
+    height: 97.5vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.folha{
+    width: 750px;
+    height: 1005px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 25px;
+    width: 95%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.div1{
+    display: flex;
+    align-items: center;
+}
+.div1 img{
+    margin-top: -20px;
+}
+.danfe1{
+    margin-top: -35px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.danfe2{
+    margin-left: 50px;
+    margin-top: -35px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+.line1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.remetente{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1px;
+}
+.line4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 350px;
+}
+#btnButton{
+    width: 290px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: rgb(50, 115, 255);
+    border: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+}
+#btnVoltar{
+    width: 290px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: rgb(255, 50, 50);
+    border: none;
+    font-size: 25px;
+    color: white;
+    border-radius: 10px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    margin-top: 800px;
+    margin-left: 45px;
+}

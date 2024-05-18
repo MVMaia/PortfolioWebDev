@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Adicione os estilos e scripts do Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <!-- Adicione a biblioteca jQuery Mask Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <script src="JS/script.js"></script>
+    <title>PDF</title>
+    <link rel="shortcut icon" type="imagex/png" href="/images/pdf.png" />
+  </head>
+
+  <body onload="deleteAll();carregarNumero()">
+    <div class="box">
+      <div class="nave">
+        <div class="div" id="div1">
+          <label style="font-size: 25px; font-family: 'Times New Roman', Times, serif;">N° da Nota</label>
+          <label style="font-size: 18px" id="labelNnota" name="labelNnota"></label>
+        </div>
+        <div class="div" id="div2">
+          <label style=" font-size: 25px; font-family: 'Times New Roman', Times, serif; ">Série</label>
+          <label style="font-size: 18px" id="labelNserie" name="labelNserie">381-2631</label>
+        </div>
+        <div class="div" id="div3">
+          <label style="font-size: 25px; font-family: 'Times New Roman', Times, serif;">Folha</label>
+          <select class="browser-default" id="folha">
+            <option value="" disabled selected>Tipo de Folha</option>
+            <option value="A5">A5</option>
+            <option value="A4">A4</option>
+            <option value="A3">A3</option>
+          </select>
+        </div>
+        <div class="div" id="div4">
+          <label style="font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 65px;">Data: <label id="data" name="data" style="font-size: 18px"></label></label>
+          <label style="font-size: 20px; font-family: 'Times New Roman', Times, serif; margin-left: 65px;">Hora: <label id="hora" name="hora" style="font-size: 19px"></label></label>
+        </div>
+        <div class="div" id="div5">
+          <label style="margin-left: 60px">
+            <input name="group1" id="entrada" type="radio" />
+            <span>Entrada</span>
+          </label>
+          <label style="margin-left: 60px">
+            <input name="group1" id="saida" type="radio"/>
+            <span>Saída</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="tab">
+        <button class="tab-btn" id="btnR" onclick="abrirTAB('Remetente');changeBack('btnR');ChangeAgain('btnD');ChangeAgain('btnT');ChangeAgain('btnDP')">Remetente</button>
+        <button class="tab-btn" id="btnD" onclick="abrirTAB('Destinatario');changeBack('btnD');ChangeAgain('btnR');ChangeAgain('btnT');ChangeAgain('btnDP')" >Destinatário</button>
+        <button class="tab-btn" id="btnT" onclick="abrirTAB('Transportador');changeBack('btnT');ChangeAgain('btnD');ChangeAgain('btnR');ChangeAgain('btnDP')" >Transportador</button>
+        <button class="tab-btn" id="btnDP" onclick="abrirTAB('DadoP');changeBack('btnDP');ChangeAgain('btnT');ChangeAgain('btnR');ChangeAgain('btnD')">Dados do Produto</button>
+      </div>
+      <div id="Remetente" class="conteudo">
+        <div class="log">
+          <div class="form">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="obrigatório" id="RazaoSocial" type="text" class="validate"/>
+                <label for="Razão-Social">Nome</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="CNPJ" type="text"/>
+                <label for="CNPJ">CPF/CNPJ</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s5">
+                <input id="CEP" type="text" maxlength="8" oninput="this.value=this.value.replace(/\D/g,'')"/>
+                <label for="CEP">CEP</label>
+              </div>
+              <div class="input-field col s7">
+                <input placeholder="" id="Endereço" type="text"/>
+                <label for="Endereço">Endereço</label>
+              </div>
+            </div>
+            <div class="row" style="margin-top: -50px;" >
+              <div class="input-field col s4">
+                <input placeholder="" id="Municipio" type="text" />
+                <label for="Municipio">Municipio</label>
+              </div>
+              <div class="input-field col s4">
+                <input placeholder="" id="Bairro" type="text" />
+                <label for="Bairro">Bairro</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="Telefone" type="text" />
+                <label for="Telefone">Telefone</label>
+              </div>
+            </div>
+            <div class="row" style="margin-top: -50px;">
+              <div class="input-field col s12">
+                <textarea id="Estado" class="materialize-textarea"></textarea>
+                <label for="Estado">Inscrição estadual</label>
+              </div>
+            </div>
+            <div class="divbtn row">
+              <button class="btn_muda" onclick="SaveRemetente('Destinatario');changeBack('btnD');ChangeAgain('btnR')">Destinatário</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Destinatario" class="conteudo">
+        <div class="log">
+          <div class="form">
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="obrigatório" id="NameDest" type="text" />
+                <label for="Razão-Social">Nome</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="CNPJdest" type="text" />
+                <label for="CNPJ">CNPJ</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s5">
+                <input id="CEPDest" type="text" />
+                <label for="CEP">CEP</label>
+              </div>
+              <div class="input-field col s7">
+                <input placeholder="" id="EndereçoDest" type="text" />
+                <label for="Endereço">Endereço</label>
+              </div>
+            <div class="row">
+              <div class="input-field col s4">
+                <input placeholder="" id="MunicipioDest" type="text" />
+                <label for="Municipio">Municipio</label>
+              </div>
+              <div class="input-field col s4">
+                <input placeholder="" id="BairroDest" type="text" />
+                <label for="Bairro">Bairro</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="TelefoneDest" type="text" />
+                <label for="Telefone">Telefone</label>
+              </div>
+            </div>
+            </div>
+            <div class="row" style="margin-top: -50px;">
+              <div class="input-field col s12">
+                <textarea id="EstadoDest" class="materialize-textarea"></textarea>
+                <label for="Estado">Inscrição estadual</label>
+              </div>
+            </div>
+            <div class="divbtn row" style="margin-top: 50px;">
+              <button class="btn_muda2" id="btnVoltar" onclick="abrirTAB('Remetente');changeBack('btnR');ChangeAgain('btnD')">Voltar</button>
+              <button class="btn_muda2" id="btnTrans" onclick="SaveDestiny('Transportador');changeBack('btnT');ChangeAgain('btnD')">Transportador</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Transportador" class="conteudo">
+        <div class="log">
+          <div class="form">
+            <div class="row" style="margin-bottom: -70px; margin-top: -50px">
+              <div class="input-field col s6">
+                <input placeholder="obrigatório" id="TransportName" type="text"/>
+                <label for="Razão-Social">Nome</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="CNPJTransport" type="text"/>
+                <label for="CNPJ">CNPJ</label>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom: -15px">
+              <div class="input-field col s7">
+                <input id="TransportAddress" type="text" />
+                <label for="Endereço">Endereço</label>
+              </div>
+              <div class="input-field col s5">
+                <input id="TransportDistrict" type="text" />
+                <label for="Bairro">Bairro</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s8">
+                <input id="TransportCity" type="text" />
+                <label for="Municipio">Municipio</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="TransportPhone" type="text" />
+                <label for="Telefone">Telefone</label>
+              </div>
+            </div>
+            <div class="row" style="margin-top: -50px">
+              <div class="input-field col s12">
+                <textarea id="TransportUF" class="materialize-textarea" ></textarea>
+                <label for="Estado">Inscrição estadual</label>
+              </div>
+            </div>
+            <div class="row" style="margin-top: -160px">
+              <div class="input-field col s4">
+                <input id="FreteConta" name="FreteConta" type="text" />
+                <label>Frete por Conta</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="FreteValor" name="FreteValor" type="text" placeholder="R$00,00"/>
+                <label>Valor do Frete</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="TransportWeight" name="FreteValor" type="text" placeholder="0 kg"/>
+                <label>Peso da Carga</label>
+              </div>
+            </div>
+            <div class="divbtn row">
+              <button class="btn_muda2" onclick="abrirTAB('Destinatario');changeBack('btnD');ChangeAgain('btnT')">Voltar</button>
+              <button class="btn_muda2" onclick="SaveTransport('DadoP');changeBack('btnDP');ChangeAgain('btnT')">Dados do Produto</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="DadoP" class="conteudo">
+        <div class="log">
+          <div class="form" style="margin-top: 50px">
+            <div class="row" style="display: flex; align-items: center">
+              <div class="input-field col s2">
+                <input id="Codigo" type="text" />
+                <label for="Codigo">Código</label>
+              </div>
+              <div class="input-field col s4">
+                <input id="Produto" type="text" />
+                <label for="Produto">Produto</label>
+              </div>
+              <div class="input-field col s2">
+                <input id="Qtd" type="text" />
+                <label for="Qtd">Quantidade</label>
+              </div>
+              <div class="input-field col s3">
+                <input id="Unit" type="text" />
+                <label for="ValorUnit">Valor Unitário</label>
+              </div>
+              <div class="input-field col s3">
+                <button class="btnAdd" onclick="addTable();Total5()">Adicionar</button>
+              </div>
+            </div>
+            <div class="row" style="margin-bottom: 35px; margin-top: 35px" id="tabelinha">
+              <table class="" id="Tabela1">
+                <thead>
+                  <tr style="color: white">
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Valor Unitário</th>
+                    <th>Valor Total</th>
+                  </tr>
+                </thead>
+                <tbody style="color: white"></tbody>
+              </table>
+            </div>
+            <div class="row" style="display: flex; align-items: center; margin-bottom: -35px">
+              <div class="total" style="display: flex; align-items: center; justify-content: center;">
+                <label for="Codigo" id="valorTotal2" style="font-size: 37px">Valor Total do Carrinho: </label>
+                <label for="Codigo" id="valorTotal" style="font-size: 37px"></label>
+              </div>
+            </div>
+            <div class="divbtn row" style="margin-top: 70px">
+              <button class="btn_muda2" onclick="abrirTAB('Transportador');changeBack('btnT');ChangeAgain('btnDP')">Voltar</button>
+              <button class="btn_muda2" onclick="SaveDANFE();SaveData();saveProd();openHTML()">Gerar PDF</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/JavaScript">
+
+    $('#CNPJ').mask('000.000.000-00');
+    $('#CNPJdest').mask('00.000.000/0000-00');
+    $('#CNPJTransport').mask('00.000.000/0000-00');
+    $('#Telefone').mask('(00) 9 0000-0000');
+    $('#TelefoneDest').mask('(00) 9 0000-0000');
+    $('#TransportPhone').mask('(00) 9 0000-0000');
+    $('#FreteValor').mask("R$ #.##0,00");
+    $('#Unit').mask('0000000000000,00', { reverse: true });
+    $('#TransportWeight').mask("00 Kg");
+    //variavel global
+    var label = document.getElementById('labelNnota');
+
+    function zeros(number) {
+    let numStr = String(number);
+    while (numStr.length < 8) {
+        numStr = '0' + numStr;
+    }
+        numStr = numStr.substring(0, 4) + '-' + numStr.substring(4);
+        label.innerText = numStr;
+    }
+    //API para CEP
+    async function consultarCEP() {
+      // Obtenha o valor do CEP do input
+      const cep = document.getElementById('CEP').value;
+
+      try {
+        // Realize a requisição à API do ViaCEP
+        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        const data = await response.json();
+
+        // Verifique se a resposta não possui erro
+        if (!data.erro) {
+          // Preencha os campos de endereço, município e bairro
+          document.getElementById('Endereço').value = data.logradouro;
+          document.getElementById('Municipio').value = data.localidade;
+          document.getElementById('Bairro').value = data.bairro;
+        } else {
+          alert('CEP não encontrado. Verifique o CEP informado.');
+        }
+      } catch (error) {
+        console.error('Erro na consulta de CEP:', error);
+      }
+    }
+
+    // Adicione um ouvinte de eventos ao campo de CEP para acionar a consulta durante a digitação
+    document.getElementById('CEP').addEventListener('input', consultarCEP);
+    
+    async function consultarCEPDest() {
+      // Obtenha o valor do CEP do input
+      const cep = document.getElementById('CEPDest').value;
+
+      try {
+        // Realize a requisição à API do ViaCEP
+        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        const data = await response.json();
+
+        // Verifique se a resposta não possui erro
+        if (!data.erro) {
+          // Preencha os campos de endereço, município e bairro
+          document.getElementById('EndereçoDest').value = data.logradouro;
+          document.getElementById('MunicipioDest').value = data.localidade;
+          document.getElementById('BairroDest').value = data.bairro;
+        } else {
+          alert('CEP não encontrado. Verifique o CEP informado.');
+        }
+      } catch (error) {
+        console.error('Erro na consulta de CEP:', error);
+      }
+    }
+
+    // Adicione um ouvinte de eventos ao campo de CEP para acionar a consulta durante a digitação
+    document.getElementById('CEPDest').addEventListener('input', consultarCEPDest);
+
+    function DateKrai() {
+      var dataBrazilian = new Date();
+      var dataC = dataBrazilian.toLocaleDateString();
+      var dateLabel = document.getElementById('data');
+      dateLabel.innerText = dataC;
+    }
+    function hourKrai() {
+        var dataBrazilian = new Date();
+        const horaAtual = dataBrazilian.toLocaleTimeString();
+        var HourLabel = document.getElementById('hora');
+        HourLabel.innerText = horaAtual;
+    }
+    DateKrai();
+    setInterval(() => {hourKrai();}, 1000);
+
+    function calcularTotal(){
+        var Qtd1 = document.getElementById('Qtd').value;
+        var Unit1 = document.getElementById('Unit').value;
+        unitPonto = trocaVirgula(Unit1);
+        var calc = Qtd1 * unitPonto;
+        return calc;
+    }
+
+    var InputUnit = document.getElementById("Unit");
+
+    // Função para calcular o total da tabela
+    function Total5(){
+        var tabela = document.getElementById('Tabela1');
+        var valores = [];
+        for (var i = 1; i < tabela.rows.length; i++) {
+          var numbers = tabela.rows[i].cells[4].textContent;
+          numsplit = numbers.split("$");
+          var precos = numsplit[1];
+          var precoponto = trocaVirgula(precos);
+          valores.push(parseFloat(precoponto));
+        }
+        //-------------------
+        var result5 = 0;
+        for(i=0;i<=valores.length-1;i++){
+            result5 = result5 + valores[i];
+        }
+        result5 = result5.toFixed(2);
+        var result6 = trocaPonto(result5.toString());
+        document.getElementById('valorTotal').textContent = ` R$${result6}`;
+    }
+    function openHTML(){
+      window.location.href = "pdf.html";
+      //carregarNumero();
+    }
+    function carregarNumero(){
+        var numeroString = localStorage.getItem('Nnota');
+        if(numeroString == null){
+          var id = localStorage.setItem("Nnota", "1");
+          var num = parseInt(numeroString);
+          console.log(num);
+          zeros(num);
+        } else {
+          var numeroInt = parseInt(numeroString);
+          numeroInt = numeroInt + 1;
+          zeros(numeroInt);
+          localStorage.setItem("Nnota", numeroInt);
+        }
+    }
+    //
+    // Chame a função inicialmente
+    calcularTotal();
+  </script>
+</html>
