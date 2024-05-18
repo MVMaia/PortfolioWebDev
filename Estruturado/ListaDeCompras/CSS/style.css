@@ -1,0 +1,101 @@
+body{
+    width: 97.5vw;
+    height: 97.5vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../IMGS/shop1.jpg');
+    background-size:cover;
+}
+.box{
+    width: 70vw;
+    height: 80vh;
+    background-color:rgba(0, 0, 0, 0.581);
+    border: 2px solid white;
+    border-radius: 50px;
+    -webkit-box-shadow: 45px 27px 37px 6px rgba(0,0,0,0.34);
+    -moz-box-shadow: 45px 27px 37px 6px rgba(0,0,0,0.34);
+    box-shadow: 45px 27px 37px 6px rgba(0,0,0,0.34);
+    -webkit-box-shadow: inset -6px -19px 32px 6px rgba(0,0,0,0.34);
+    -moz-box-shadow: inset -6px -19px 32px 6px rgba(0,0,0,0.34);
+    box-shadow: inset -6px -19px 32px 6px rgba(0,0,0,0.34);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+.header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.inputs1{
+    width: 22%;
+}
+.texts{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 3px;
+}
+.inputs{
+    width: 100%;
+    height: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.desc{
+    font-size: 25px;
+    color: white;
+}
+.titulo{
+    font-size: 23px;
+    height: 15px;
+    margin-top: -12px;
+}
+.tableDiv{
+    width: 100%;
+    height: 85vh;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.tableDiv1{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    align-items:start;
+    overflow-y: auto;
+    max-height: 400px;
+}
+.tabelinha{
+    width: 100%;
+    background-color: white;
+}
+.botao{
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: background-color 0.3s;
+}
+.botao:active {
+    background-color: black;
+}
