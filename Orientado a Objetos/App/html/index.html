@@ -49,26 +49,26 @@
     <!-- Modal -->
     <form  id="formCadastro"  method="post">
     <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Usuário:</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;"><i class="bi bi-person-circle" style="color: white;"></i> Cadastrar Usuário:</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="form-group d-flex align-items-center justify-content-center flex-column">
-                    <label for="userF" class="col-12" ><i class="bi bi-person-circle"></i> Nome Do Usuário:</label>
+                    <label for="userF" class="col-12" style="color: white;"><i class="bi bi-pencil-fill" style="color: white;"></i> Nome Do Usuário:</label>
                     <input type="text" id="userF" name="userF" class="mail form-control">
 
-                    <label for="mail" class="col-12" ><i class="bi bi-envelope-open"></i> E-mail:</label>
+                    <label for="mail" class="col-12" style="color: white;"><i class="bi bi-envelope-open" style="color: white;"></i> E-mail:</label>
                     <input type="text" id="mail" name="mail" class="mail form-control">
 
-                    <label for="pass" class="col-12" ><i class="bi bi-key"></i> Senha:</label>
-                    <input type="text" id="pass" name="pass" class="mail form-control">
+                    <label for="pass" class="col-12" style="color: white;" ><i class="bi bi-key" style="color: white;"></i> Senha:</label>
+                    <input type="password" id="pass" name="pass" class="mail form-control">
                 </div>
             </div>
             <div class="modal-footer">
-            <button type="submit" class="btn" id="cadastroU" name="cadastroU" style="background-color: #711eb6; color: white;">Cadastrar</button>
+            <button type="submit" class="btn btn-light" id="cadastroU" name="cadastroU">Cadastrar</button>
             <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Fechar</button>
             </div>
         </div>

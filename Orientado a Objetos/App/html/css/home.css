@@ -53,3 +53,28 @@ body{
     width: 50px !important;
     height: 50px !important;
   }
+  
+  #cadastroPost{
+    background-image: url('../../img/modal-bg.jpg');
+    background-size: cover;
+  }
+  .cadastroContent{
+    background: rgba( 0, 0, 0, 0.25 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter: blur( 16px ) !important;
+    -webkit-backdrop-filter: blur( 16px ) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
+  }
+  #updatePost{
+    background-image: url('../../img/city.jpeg');
+    background-size: cover;
+  }
+  .updateContent{
+    background: rgba( 0, 0, 0, 0.25 ) !important;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+    backdrop-filter: blur( 16px ) !important;
+    -webkit-backdrop-filter: blur( 16px ) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
+  }

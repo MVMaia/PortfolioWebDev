@@ -10,7 +10,7 @@ class Posts
     {
         //vazio
     }
-    public  function all()
+    public function all()
     {
 
         try {
@@ -25,7 +25,7 @@ class Posts
             //echo "<pre>";
             $dados = $result->fetchAll(PDO::FETCH_ASSOC);
             foreach ($dados as $row) {
-                $this->registros .= $row['post'] . " - " . $row['data'] . " - " .  $row['hora'] . '<br>';
+                $this->registros .= $row['post'] . " - " . $row['data'] . " - " . $row['hora'] . '<br>';
             }
             return $dados;
         } catch (Exception $error) {
@@ -33,22 +33,80 @@ class Posts
             exit;
         }
     }
-    public  function insert($params)
-    {
-        $sql = "INSERT INTO  posts (id,post,data,hora,likes)
-                                 VALUES  ({$params['id']},
-                                         '{$params['post']}',
-                                         '{$params['data']}',
-                                         '{$params['hora']}',
-                                         '{$params['likes']}')";
 
-        //criando um log de ações no Banco de Dados com RA
-        $RA = "Cosme";
-        Utils::log($sql, $RA);
-        echo "O logger foi realizado com sucesso no TXT.";
-        //Qual Conexao está aberta?                        
-        $conn = Transaction::getConnection();
-        //inicia a Transação
-        return $conn->exec($sql);
+    public function insert($params)
+    {
+        try {
+
+            date_default_timezone_set('America/Sao_Paulo');
+            $data = date('d-m-Y');
+            $hora = date('H:i');
+
+            
+            $sql = "INSERT INTO  posts (post,data,hora)
+            VALUES  ('{$params['posts']}',
+                    '$data',
+                    '$hora')";
+
+            //criando um log de ações no Banco de Dados com RA
+            $RA = "Marcelo";
+            Utils::log($sql, $RA);
+            echo "O logger foi realizado com sucesso no TXT.";
+            //Qual Conexao está aberta?                        
+            $conn = Transaction::getConnection();
+            echo "Postado";
+            //inicia a Transação
+            $result = $conn->prepare($sql);
+            $result->execute();
+            Transaction::close();
+        } catch (Exception $e) {
+            echo '<pre>';
+            print_r($e);
+        }
+    }
+    
+    public function deletePost($params){
+        
+        try{
+            
+            $sql = "DELETE FROM posts WHERE id = :id";
+            $dev = "Marcelo";
+            Utils::log($sql,$dev);
+            $conn = Transaction::getConnection();
+            $query = $conn->prepare($sql);
+            $query->bindParam(':id',$params['id']);
+            $query->execute();
+            echo "deletado";
+            Transaction::close();
+
+        }catch(Exception $error){
+            echo '<pre>';
+            print_r($error);
+        }
+    }
+
+    public function updatePost($params){
+        try{
+            date_default_timezone_set('America/Sao_Paulo');
+            $data = date('d-m-Y');
+            $hora = date('H:i');
+
+            $sql = "UPDATE posts SET post = :post, data = :data, hora = :hora WHERE id = :id";
+            $dev = "Marcelo";
+            Utils::log($sql,$dev);
+            $conn = Transaction::getConnection();
+            $query = $conn->prepare($sql);
+            $query->bindParam(':post',$params['updated']);
+            $query->bindParam(':data',$data);
+            $query->bindParam(':hora',$hora);
+            $query->bindParam(':id',$params['id']);
+            $query->execute();
+            echo "atualizado";
+            Transaction::close();
+
+        }catch(Exception $error){
+            echo '<pre>';
+            print_r($error);
+        }
     }
 }

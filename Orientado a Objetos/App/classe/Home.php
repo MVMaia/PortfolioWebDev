@@ -17,10 +17,13 @@ class Home
         $this->posts = $postsResult->all();
         $i = 1;
         foreach($this->posts as $row){
+            $dateE = $row['data'];
+            $dateEx = explode('-', $dateE);
+            $dateBr = "$dateEx[0]/$dateEx[1]/$dateEx[2]";
             $this->rowTable = file_get_contents("./html/Componentes/rowTable.html");
-            $this->rowTable = str_replace('{id}',$i++,$this->rowTable);
+            $this->rowTable = str_replace('{id}',$row['id'],$this->rowTable);
             $this->rowTable = str_replace('{post}',$row['post'],$this->rowTable);
-            $this->rowTable = str_replace('{data}', $row['data'],$this->rowTable);
+            $this->rowTable = str_replace('{data}', $dateBr,$this->rowTable);
             $this->rowTable = str_replace('{hora}', $row['hora'], $this->rowTable);
             $this->rows .= $this->rowTable;
         }

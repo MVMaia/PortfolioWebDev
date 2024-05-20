@@ -26,14 +26,56 @@
         {posts}
       </div>
       <div class="row btns" style="width: 100%; height: 20%;">
-        <button  id="addpost" class="btn btn-light addpost" name="addpost" style=" width: 15vw;">Adicionar Post</button>
+        <button  id="addpost" class="btn btn-light addpost" name="addpost" style=" width: 15vw;" data-bs-toggle="modal" data-bs-target="#cadastroPost">Fazer um Post</button>
         <button  id="logout" class="btn btn-light logout" nome="logout" style=" width: 15vw;">Deslogar</button>
       </div>
     </div>
 
     <footer class="down" style="width: 100vw; height: 50px;  position: absolute; bottom: 0;"><label class="maia">Maia Technologies - all rights reserved</label></footer>
-
     
+    <!-- Modal Postar -->
+    <div class="modal fade" id="cadastroPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cadastroContent">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;"><i class="bi bi-emoji-smile-fill"></i> Fazer um post:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="TAposts" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Digite qualquer coisa:</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-light" id="btnPostar">Postar</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal Update -->
+        <div class="modal fade" id="updatePost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content updateContent">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;"><i class="bi bi-pencil-fill" style="color: white;"></i> Edite seu post:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="TAupdate" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">O que deseja mudar?</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-light" id="btnUpdate">Atualizar</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
 </body>
 <script src="./js/Http.js"></script>
 <script src="./js/home.js"></script>
