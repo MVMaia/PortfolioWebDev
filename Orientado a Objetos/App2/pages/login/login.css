@@ -1,0 +1,73 @@
+body {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: gray;
+  background-image: url("./imgs/login-bg.jpg");
+  background-size: cover;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.box {
+  background: rgba(9, 9, 9, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-family: "Enter Sansman", sans-serif;
+}
+.down {
+  background: rgba(9, 9, 9, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: whitesmoke;
+}
+.maia {
+  margin-right: 10px;
+  font-family: "Enter Sansman", sans-serif;
+}
+#upp {
+  background: rgba(9, 9, 9, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-family: "Enter Sansman", sans-serif;
+}
+#btnCadastro {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: white;
+}
+
+#btnCadastro:hover {
+  color:gray !important; 
+}
+
+.modal{
+  background-image: url('./imgs/bg.jpg');
+  background-size: cover;
+  
+}
+
+.modal-content{
+  background: rgba( 0, 0, 0, 0.25 ) !important;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+  backdrop-filter: blur( 16px ) !important;
+  -webkit-backdrop-filter: blur( 16px ) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
+}

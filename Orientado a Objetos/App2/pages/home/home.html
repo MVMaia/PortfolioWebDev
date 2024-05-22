@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalNexus</title>
+    <link rel="stylesheet" href="./pages/home/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/enter-sansman" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="container d-flex align-items-center justify-content-around" style="width: 100vw; height: 100vh;">
+
+    <nav class="navbar" style="width: 100vw; height: 50px; position: absolute; top:0;" id="upp">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: whitesmoke;">
+            <img src="./pages/home/imgs/grayLogo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            DigitalNexus
+          </a>
+          <a style="color: white;">{usuario}</a>
+        </div>
+      </nav>
+
+    <div class="box container d-flex align-items-center justify-content-center flex-column" style="width: 60vw; height: 65vh;">
+      <div class="row" style="width: 100%; height: 80%;">
+        {posts}
+      </div>
+      <div class="row btns" style="width: 100%; height: 20%;">
+        <button  id="addpost" class="btn btn-light addpost" name="addpost" style=" width: 15vw;" data-bs-toggle="modal" data-bs-target="#cadastroPost">Fazer um Post</button>
+        <button  id="logout" class="btn btn-light logout" nome="logout" style=" width: 15vw;">Deslogar</button>
+      </div>
+    </div>
+
+    <footer class="down" style="width: 100vw; height: 50px;  position: absolute; bottom: 0;"><label class="maia">Maia Technologies - all rights reserved</label></footer>
+    
+    <!-- Modal Postar -->
+    <div class="modal fade" id="cadastroPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cadastroContent">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;"><i class="bi bi-emoji-smile-fill"></i> Fazer um post:</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="TAposts" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Digite qualquer coisa:</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-light" id="btnPostar">Postar</button>
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Modal Update -->
+        <div class="modal fade" id="updatePost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content updateContent">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white;"><i class="bi bi-pencil-fill" style="color: white;"></i> Edite seu post:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="TAupdate" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">O que deseja mudar?</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-light" id="btnUpdate">Atualizar</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+<script src="Http.js"></script>
+<script src="./pages/home/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

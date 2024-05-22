@@ -1,0 +1,12 @@
+<tr style="border-bottom: 1px solid white;">
+    <td style="color: transparent;">{id}</td>
+    <td>{post}</td>
+    <td>{hora}</td>
+    <td>{data}</td>
+    <td class="btns2">
+        <!-- <a class="edits" href='./index.php?class=TarefaForm&method=edit&id={tb_id}' style="color: white;">Editar</a> -->
+        <button class="btnEdit" id="btnEdit" style="background-color: transparent;" data-bs-toggle="modal" data-bs-target="#updatePost" onclick="updateIDchanger({id})"><i class="bi bi-pencil-fill" style="color:white"></i></button>
+        <!-- <a class="edits" href='./index.php?class=TarefaForm&method=delete&id={tb_id}' style="color: white;">Excluir</a> -->
+        <button class="btnDelete" id="btnDelete" style="background-color: transparent;" onclick="deletePost({id})"><i class="bi bi-x-lg" style="color: white;"></i></button>
+    </td>
+</tr>
