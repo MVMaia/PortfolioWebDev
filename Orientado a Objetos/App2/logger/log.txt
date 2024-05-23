@@ -1,3 +1,36 @@
+23-05-2024 14:28:14 -  faelzin@mail.com disparou :  Deslogou 
+23-05-2024 14:28:00 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:28:00 -  Marcelo disparou :  DELETE FROM posts WHERE id = :id
+23-05-2024 14:27:58 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:27:58 -  faelzin@mail.com disparou :  Autenticou
+23-05-2024 14:27:51 -  faelzin@mail.com disparou :  Deslogou 
+23-05-2024 14:27:48 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:27:48 -  Marcelo disparou :  UPDATE posts SET post = :post, data = :data, hora = :hora WHERE id = :id
+23-05-2024 14:27:39 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:27:39 -  Marcelo disparou :  INSERT INTO  posts (post,data,hora)
+            VALUES  ('loucura',
+                    '23-05-2024',
+                    '14:27')
+23-05-2024 14:27:35 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:27:35 -  Marcelo disparou :  DELETE FROM posts WHERE id = :id
+23-05-2024 14:27:32 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:27:32 -  faelzin@mail.com disparou :  Autenticou
+23-05-2024 14:27:16 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:27:03 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:26:46 -  marcelo@mail.com disparou :  Deslogou 
+23-05-2024 14:26:39 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:26:38 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('fael', 'faelzin@mail.com', '12')
+23-05-2024 14:07:00 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:07:00 -  Marcelo disparou :  UPDATE posts SET post = :post, data = :data, hora = :hora WHERE id = :id
+23-05-2024 14:06:45 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:06:45 -  Marcelo disparou :  INSERT INTO  posts (post,data,hora)
+            VALUES  ('Rafael',
+                    '23-05-2024',
+                    '14:06')
+23-05-2024 14:06:17 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+23-05-2024 14:06:17 -  marcelo@mail.com disparou :  Autenticou
+22-05-2024 16:59:20 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
+22-05-2024 16:59:20 -  Marcelo disparou :  INSERT INTO  users (nome,email,senha) VALUES ('henricao', 'henrique@mail.com', '123')
 22-05-2024 16:53:26 -  marcelo@mail.com disparou :  Deslogou 
 22-05-2024 16:53:25 -  Cosme disparou :  SELECT * FROM posts LIMIT 10
 22-05-2024 16:53:25 -  Marcelo disparou :  DELETE FROM posts WHERE id = :id
